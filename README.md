@@ -36,3 +36,4 @@ Implementation details to consider:
 * The server must be able to reserve IP for specific MAC addresses. (One IP for each MAC Address). That is, in a way, we consider static IP for certain devices. When an IP is reserved, it will not be given to any other client, even if the client for whom this IP is reserved is offline at that moment.
 * Like booking, we also have the ability to block specific MAC addresses. In this way, if we had a request for IP from specific MACs, we will not respond to the request.
 * The server must keep the device name, the remaining time until the expiration of that IP and the assigned IP itself for each MAC Address assigned to that IP, and by writing the command clients_show in the console, in each line Expire Time, IP Address, Mac Address, Computer name are displayed in order.  
+* When the server wants to run, values such as IP Pool interval, Lease time, etc. must be read from a configs.json file.  
